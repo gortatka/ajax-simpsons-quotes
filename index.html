@@ -19,6 +19,8 @@
             <h1 class="title">Simpson API</h1>
 
             <div class="content" id="simpson"></div>
+            <button class="btn">Get quote</button>
+
         </div>
     </section>
 
@@ -42,7 +44,9 @@
                     document.querySelector("#simpson").innerHTML = simpsonQuoteHtml;
                 });
         }
+        let btn = document.querySelector('.btn')
 
+        btn.addEventListener('click', getSimpsonsQuoteFromApi)
         getSimpsonsQuoteFromApi();
     </script>
 </body>
